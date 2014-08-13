@@ -1,0 +1,20 @@
+{
+  "main": "index.html",
+  "name": "Github Contributors",
+  "description": "Some dumb desc",
+  "version": "0.0.1",
+  "window": {
+    "title": "Cowdown",
+    "icon": "link.png",
+    "toolbar": true,
+    "frame": true,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200
+    },
+  "webkit": {
+    "plugin": true
+  }
+}

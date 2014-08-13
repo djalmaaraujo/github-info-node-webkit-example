@@ -1,0 +1,7 @@
+{
+  "main": "index.html",
+  "name": "github-contributors",
+  "dependencies": {
+    "request": "^2.40.0"
+  }
+}

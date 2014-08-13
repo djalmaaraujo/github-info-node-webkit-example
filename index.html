@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Github My Info</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.1/css/foundation.min.css">
+</head>
+<body>
+  <div data-alert class="no-connection alert-box alert" style="display: none">Your are not connected to the internet or your credentials sucks.</div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1 class="text-center">Github My Info</h1>
+
+      <div class="page-auth large-8 columns large-centered">
+        <form id="auth-form" data-abide="ajax">
+          <fieldset>
+            <legend>Authentication</legend>
+
+            <label>
+              <input type="text" name="username" class="user-username" value="" required />
+              <span class="error">Username is required</span>
+            </label>
+            <label>
+              <input type="password" value="" name="password" class="user-password" required />
+              <span class="error">Password required</span>
+            </label>
+
+            <button class="button primary expand">Login</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="page-pulls large-12 columns hide">
+        <div class="large-4 columns">
+          <img class="th user-avatar" data-src="" width="200" />
+        </div>
+
+        <div class="large-8 columns">
+          <h4><strong class="user-name"></strong> (<strong class="user-login"></strong>)</h4>
+
+          <ul class="panel no-bullet">
+            <li>Member since: <strong class="user-created_at"></strong></li>
+            <li>Company: <strong class="user-company"></strong></li>
+            <li>Blog URL: <strong class="user-blog"></strong></li>
+            <li>Private Gists: <strong class="user-private_gists"></strong></li>
+            <li>Public Gists: <strong class="user-public_gists"></strong></li>
+            <li>Public Repos: <strong class="user-public_repos"></strong></li>
+            <li>Private Repos: <strong class="user-total_private_repos"></strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.1/js/foundation.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
