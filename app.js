@@ -56,7 +56,7 @@ $(function () {
           $('.user-' + obj).html(body[obj]);
         });
 
-        $('.page-pulls').show();
+        $('.page-info').show();
       }
     });
   });
